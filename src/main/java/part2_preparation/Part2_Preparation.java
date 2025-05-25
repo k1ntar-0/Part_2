@@ -9,10 +9,10 @@ package part2_preparation;
  */
 public class Part2_Preparation {
 
-    public static void main(String[] args) {
-      Welcome welcome = new Welcome();  
-
-
-        welcome.setVisible(true);            
+   public static void main(String[] args) {
+        Registration registration = new Registration();
+         Login login = new Login(registration);
+        login.setVisible(true);
+                
     }
 }
